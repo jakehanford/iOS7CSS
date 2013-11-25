@@ -1,0 +1,199 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title {
+  font-size: 36pt;
+  padding-top: 60px;
+}
+/* Header */
+
+/* Blue */
+.header {
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 44px;
+  line-height: 44px;
+  padding: 0;
+  color: #eee;
+  font-size: 20px;
+  text-align: center;
+}
+
+.header-blue {
+  background: rgba(59,89,152,0.8);
+}
+
+.header-green {
+  background: rgba(148,228,93,0.8);
+}
+
+.header-red {
+  background: rgba(255,134,143,0.8);
+}
+
+.header-blur {
+    position: absolute;
+    z-index: 2;
+    -webkit-filter: blur(3px);
+    -moz-filter: blur(3px);
+    -ms-filter: blur(3px);
+    -o-filter: blur(3px);
+    filter: blur(3px);
+    background: rgba(250,250,250,0.9);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 44px;
+    padding: 0;
+}
+
+.name {
+  text-indent: 10px;
+  color: #6E6E6E;
+}
+
+.headerspan {
+  position: relative;
+  width: 33%;
+  background-color: #EFEFF7;
+  height: 300px;
+  display: inline-block;
+  word-wrap: break-word;
+}
+
+.headerspan .header {
+  position: absolute;
+  height: 45px;
+}
+
+.headerspan ul {
+  margin: 0;
+  padding-top: 45px;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.headerspan > ul > li {
+  padding: 10px;
+}
+
+.fidy {
+  height: 50px;
+  width: 100%;
+}
+
+.iphone {
+  background-image: url('../images/green.png');
+  height: 400px;
+  width: 478px;
+}
+.iphoneprep {
+
+}
+
+
+
+/* Switches */
+input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+}
+
+/* Normal Track */
+input[type="checkbox"].ios-switch + div {
+  vertical-align: middle;
+  width: 40px;  height: 20px;
+  border: 1px solid rgba(0,0,0,.4);
+  border-radius: 999px;
+  background-color: rgba(0, 0, 0, 0.1);
+  -webkit-transition-duration: .4s;
+  -webkit-transition-property: background-color, box-shadow;
+  box-shadow: inset 0 0 0 0px rgba(0,0,0,0.4);
+  margin: 15px 1.2em 15px 2.5em;
+}
+
+/* Checked Track (Blue) */
+input[type="checkbox"].ios-switch:checked + div {
+  width: 40px;
+  background-position: 0 0;
+  background-color: #3b89ec;
+  border: 1px solid #0e62cd;
+  box-shadow: inset 0 0 0 10px rgba(59,137,259,1);
+}
+
+/* Big Track */
+input[type="checkbox"].bigswitch.ios-switch + div {
+  width: 50px;  height: 25px;
+}
+
+/* Green Track */
+input[type="checkbox"].green.ios-switch:checked + div {
+  background-color: #00e359;
+  border: 1px solid rgba(0, 162, 63,1);
+  box-shadow: inset 0 0 0 10px rgba(0,227,89,1);
+}
+
+/* Normal Knob */
+input[type="checkbox"].ios-switch + div > div {
+  float: left;
+  width: 18px; height: 18px;
+  border-radius: inherit;
+  background: #ffffff;
+  -webkit-transition-timing-function: cubic-bezier(.54,1.85,.5,1);
+  -webkit-transition-duration: 0.4s;
+  -webkit-transition-property: transform, background-color, box-shadow;
+  -moz-transition-timing-function: cubic-bezier(.54,1.85,.5,1);
+  -moz-transition-duration: 0.4s;
+  -moz-transition-property: transform, background-color;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3), 0px 0px 0 1px rgba(0, 0, 0, 0.4);
+  pointer-events: none;
+  /*margin-top: 1px;*/
+  margin-left: 1px;
+}
+
+/* Checked Knob (Blue Style) */
+input[type="checkbox"].ios-switch:checked + div > div {
+  -webkit-transform: translate3d(20px, 0, 0);
+  -moz-transform: translate3d(20px, 0, 0);
+  background-color: #ffffff;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3), 0px 0px 0 1px rgba(8, 80, 172,1);
+}
+/* Big Knob */
+input[type="checkbox"].bigswitch.ios-switch + div > div {
+  width: 23px; height: 23px;
+  /*margin-top: 1px;*/
+}
+
+/* Checked Big Knob (Blue Style) */
+input[type="checkbox"].bigswitch.ios-switch:checked + div > div {
+  -webkit-transform: translate3d(25px, 0, 0);
+  -moz-transform: translate3d(16px, 0, 0);
+}
+
+/* Green Knob */
+input[type="checkbox"].green.ios-switch:checked + div > div {
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(0, 162, 63,1);
+}
