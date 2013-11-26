@@ -7,117 +7,83 @@
 
 </head>
 <body>
-  <div class="container">
   <div class="title">iOS 7 style in CSS.</div>
   <div class="name">Just a small collection of iOS 7 design aspects I have built out for the web, so far it's only the title bar, knobs, and a half done slider.</div>
   <div class="name">by Jack Hanford</div>
   <div class="fidy"></div>
       <!-- Headers -->
   <div class="whiteback">
-    <div class="title">Headers / Nav bars</div>
+    <div class="title2">iOS 7Header / Navbar</div>
     <div class="iphone">
       <div class="headerspan">
-        <div class="header header-green">This is a title</div>
+        <div class="header header-white">This is a title</div>
         <div class="header-blur"></div>
         <ul>
-          <li>This is filler</li>
-          <li>This is filler</li>
-          <li>This is filler</li>
-          <li>This is filler</li>
-          <li>This is filler</li>
-          <li>This is filler</li>
-          <li>This is filler</li>
-          <li>This is filler</li>
-          <li>This is filler</li>
-          <li>This is filler</li>
+          <li class="sent">To see the blur effect you must scroll!</li>
+          <li class="sent">To see the blur effect you must scroll!</li>
+          <li class="recieved">To see the blur effect you must scroll!</li>
+          <li class="recieved">To see the blur effect you must scroll!</li>
+          <li class="sent">To see the blur effect you must scroll!</li>
+          <li class="sent">To see the blur effect you must scroll!</li>
+          <li class="recieved">To see the blur effect you must scroll!</li>
+          <li class="sent">To see the blur effect you must scroll!</li>
+          <li class="recieved">To see the blur effect you must scroll!</li>
         </ul>
       </div>
     </div>
-  <!-- </div> -->
-  <div class="btn btn-red">Red</div>
-  <div class="btn btn-blue">Blue</div>
-  <div class="btn btn-green">Green</div>
-  <div class="howto">
-    <div class="title">How I achieved the effect</div>
-    <p>This is something I was really confused about for a little bit, until it found clever solution. I am calling <code>.header</code> which has a higher z-index then <code>.header-blur</code>. Header-blur is placed directly under the header with the CSS filters that blur the contents when scrolling.</p>
-    <code>.header { <br />
-  position: absolute; <br />
-  z-index: 3; <br />
-  top: 0; <br />
-  left: 0; <br />
-  width: 100.5%; <br />
-  height: 44px; <br />
-  line-height: 44px; <br />
-  padding: 0; <br />
-  color: #eee; <br />
-  font-size: 20px; <br />
-  text-align: center; <br />
-}
-<br />
-<br />
-..
-<br />
-<br />
-.header-blur { <br />
-    position: absolute; <br />
-    z-index: 2; <br />
-    -webkit-filter: blur(3px); <br />
-    -moz-filter: blur(3px); <br />
-    -ms-filter: blur(3px); <br />
-    -o-filter: blur(3px); <br />
-    filter: blur(3px); <br />
-    background: rgba(250,250,250,0.9); <br />
-    top: 0; <br />
-    left: 0; <br />
-    width: 100%; <br />
-    height: 44px; <br />
-    padding: 0; <br />
-}
-</code>
   </div>
-<!--   <div class="headerspan">
-    <div class="header header-green">This is a title</div>
-    <div class="header-blur"></div>
-    <ul>
-      <li>This is filler</li>
-      <li>This is filler</li>
-      <li>This is filler</li>
-      <li>This is filler</li>
-      <li>This is filler</li>
-      <li>This is filler</li>
-      <li>This is filler</li>
-      <li>This is filler</li>
-      <li>This is filler</li>
-      <li>This is filler</li>
-    </ul>
+  <div class="button">
+    <div class="btn btn-red">Red</div>
+    <div class="btn btn-blue">Blue</div>
+    <div class="btn btn-green">Green</div>
+    <div class="btn btn-white">White</div>
   </div>
-  <div class="headerspan">
-    <div class="header header-red">This is a title</div>
-    <div class="header-blur"></div>
-    <ul>
-      <li>This is filler</li>
-      <li>This is filler</li>
-      <li>This is filler</li>
-      <li>This is filler</li>
-      <li>This is filler</li>
-      <li>This is filler</li>
-      <li>This is filler</li>
-      <li>This is filler</li>
-      <li>This is filler</li>
-      <li>This is filler</li>
-    </ul>
-  </div> -->
-
-      <!-- Slider -->
+  <div class="whiteback">
+    <div class="howto">
+      <div class="title2">How I achieved the effect</div>
+      <p>This is something I was really confused about for a little bit, until it found clever solution. I am calling <code>.header</code> which has a higher z-index then <code>.header-blur</code>. Header-blur is placed directly under the header with the CSS filters that blur the contents when scrolling. This is kind of neat because it can provides some context to the navbar having content above it. It's subtle, but it's a great touch.</p>
+        <code>
+          .header { <br />
+          position: absolute; <br />
+          z-index: 3; <br />
+          top: 0; <br />
+          left: 0; <br />
+          width: 100.5%; <br />
+          height: 44px; <br />
+          line-height: 44px; <br />
+          padding: 0; <br />
+          color: #eee; <br />
+          font-size: 20px; <br />
+          text-align: center; <br />
+        }
+        <br />
+        <br />
+        .header-blur { <br />
+            position: absolute; <br />
+            z-index: 2; <br />
+            -webkit-filter: blur(3px); <br />
+            -moz-filter: blur(3px); <br />
+            -ms-filter: blur(3px); <br />
+            -o-filter: blur(3px); <br />
+            filter: blur(3px); <br />
+            background: rgba(250,250,250,0.9); <br />
+            top: 0; <br />
+            left: 0; <br />
+            width: 100%; <br />
+            height: 44px; <br />
+            padding: 0; <br />
+        }
+        </code>
+      </div>
+    </div>
       <!-- Knobs -->
-  <div class="title">Knobs</div>
+  <div class="title2">iOS 7 Knobs and Switches</div>
   <label>Big<input type="checkbox" class="ios-switch green  bigswitch" checked /><div><div></div></div></label>
 <label><input type="checkbox" class="ios-switch bigswitch" checked /><div><div></div></div></label>
 
-<label>Normal<input type="checkbox" class="ios-switch green" /><div><div></div></div></label>
+<label>Small<input type="checkbox" class="ios-switch green" /><div><div></div></div></label>
 <label><input type="checkbox" class="ios-switch"  /><div><div></div></div></label>
 
-  </div>
   <script type="text/javascript" src="http://codeorigin.jquery.com/jquery-2.0.3.min.js"></script>
   <script type="text/javascript" src="js/javascript.js"></script>
 </body>

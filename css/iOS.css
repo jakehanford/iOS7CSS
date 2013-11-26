@@ -8,6 +8,9 @@ html, body {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 300;
   background-color: #F1F0F5;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 *, *:before, *:after {
@@ -16,20 +19,55 @@ html, body {
   box-sizing: border-box;
 }
 
-.container {
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .whiteback {
   background: white;
-  width: 100% !important;
+  width: 100%;
 }
 
+.recieved {
+  background-color: #E6E5EB;
+  border-radius: 10px;
+  color: black;
+  word-break: break-word;
+  padding-right: 10px;
+  padding-left: 5px;
+  max-width: 200px;
+  text-align: left;
+  float: left;
+  margin-left: -35px;
+  margin-bottom: 4px;
+}
+
+.sent {
+  background-color: #048CFF;
+  border-radius: 10px;
+  color: white;
+  word-break: break-word;
+  padding-left: 10px;
+  padding-right: 5px;
+  max-width: 200px;
+  text-align: right;
+  float: right;
+  margin-bottom: 4px;
+}
+
+.fidy {
+  height: 50px;
+  width: 100%;
+}
+
+.button {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 .title {
   font-size: 36pt;
   padding-top: 60px;
+}
+
+.title2 {
+  font-size: 28pt;
+  padding-top: 20px;
 }
 
 .btn {
@@ -72,6 +110,16 @@ html, body {
   color: white;
 }
 
+.btn-white {
+  border-color: #E6E5EB;
+  color: #E6E5EB;
+}
+
+.btn-white:hover {
+  background-color: #E6E5EB;
+  color: white;
+}
+
 .howto {
   background: white;
   padding: 10px;
@@ -104,15 +152,21 @@ html, body {
   background: rgba(255,134,143,0.8);
 }
 
+.header-white {
+  background: white;
+  opacity: 0.5;
+  color: black;
+}
+
 .header-blur {
     position: absolute;
     z-index: 2;
-    -webkit-filter: blur(3px);
-    -moz-filter: blur(3px);
-    -ms-filter: blur(3px);
-    -o-filter: blur(3px);
-    filter: blur(3px);
-    background: rgba(250,250,250,0.9);
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -ms-filter: blur(5px);
+    -o-filter: blur(5px);
+    filter: blur(5px);
+    background: rgba(250,250,250,0.85);
     top: 0;
     left: 0;
     width: 100%;
@@ -121,14 +175,14 @@ html, body {
 }
 
 .name {
-  text-indent: 10px;
+  text-indent: 0px;
   color: #6E6E6E;
 }
 
 .headerspan {
   position: relative;
   width: 369px;
-  background-color: #EFEFF7;
+  background-color: whi;
   height: 300px;
   display: inline-block;
   word-wrap: break-word;
@@ -149,18 +203,16 @@ html, body {
 }
 
 .headerspan > ul > li {
-  padding: 10px;
-}
-
-.fidy {
-  height: 50px;
-  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  list-style: none;
 }
 
 .iphone {
   background-image: url('../images/green.png');
   height: 400px;
   width: 478px;
+  z-index: 10;
   margin-right: auto;
   margin-left: auto;
   overflow-y: hidden;
@@ -212,15 +264,8 @@ input[type="checkbox"].ios-switch + div > div {
   width: 18px; height: 18px;
   border-radius: inherit;
   background: #ffffff;
-  -webkit-transition-timing-function: cubic-bezier(.54,1.85,.5,1);
-  -webkit-transition-duration: 0.4s;
-  -webkit-transition-property: transform, background-color, box-shadow;
-  -moz-transition-timing-function: cubic-bezier(.54,1.85,.5,1);
-  -moz-transition-duration: 0.4s;
-  -moz-transition-property: transform, background-color;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3), 0px 0px 0 1px rgba(0, 0, 0, 0.4);
   pointer-events: none;
-  /*margin-top: 1px;*/
   margin-left: 1px;
 }
 
