@@ -138,7 +138,7 @@ html, body {
 }
 
 /* Headers */
-.header {
+.nav {
   position: absolute;
   z-index: 3;
   top: 0;
@@ -152,25 +152,25 @@ html, body {
   text-align: center;
 }
 
-.header-blue {
+.nav-blue {
   background: rgba(59,89,152,0.8);
 }
 
-.header-green {
+.nav-green {
   background: rgba(148,228,93,0.8);
 }
 
-.header-red {
+.nav-red {
   background: rgba(255,134,143,0.8);
 }
 
-.header-white {
+.nav-white {
   background: white;
   opacity: 0.8;
   color: black;
 }
 
-.header-blur {
+.nav-blur {
     position: absolute;
     z-index: 2;
     -webkit-filter: blur(8px);
