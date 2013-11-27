@@ -33,33 +33,6 @@ html, body {
   width: 100%;
 }
 
-.recieved {
-  background-color: #E6E5EB;
-  border-radius: 10px;
-  color: black;
-  word-break: break-word;
-  padding-right: 10px;
-  padding-left: 5px;
-  max-width: 200px;
-  text-align: left;
-  float: left;
-  margin-left: -35px;
-  margin-bottom: 4px;
-}
-
-.sent {
-  background-color: #048CFF;
-  border-radius: 10px;
-  color: white;
-  word-break: break-word;
-  padding-left: 10px;
-  padding-right: 15px;
-  max-width: 200px;
-  text-align: right;
-  float: right;
-  margin-bottom: 4px;
-}
-
 .fidy {
   height: 50px;
   width: 100%;
@@ -136,6 +109,24 @@ html, body {
   background: white;
   padding: 10px;
 }
+
+footer {
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  color: #E6E5EB;
+  background: gray;
+  height: 20px;
+}
+/*#########################################*/
+/*#########################################*/
+/*#########################################*/
+/*#########################################*/
+/*#########################################*/
+/*#########################################*/
+/*#########################################*/
+/*#########################################*/
+
 
 /* Headers */
 .nav {
@@ -228,6 +219,34 @@ html, body {
   margin-left: auto;
   overflow-y: hidden;
 }
+
+.recieved {
+  background-color: #E6E5EB;
+  border-radius: 10px;
+  color: black;
+  word-break: break-word;
+  padding-right: 10px;
+  padding-left: 5px;
+  max-width: 200px;
+  text-align: left;
+  float: left;
+  margin-left: -35px;
+  margin-bottom: 4px;
+}
+
+.sent {
+  background-color: #048CFF;
+  border-radius: 10px;
+  color: white;
+  word-break: break-word;
+  padding-left: 10px;
+  padding-right: 15px;
+  max-width: 200px;
+  text-align: right;
+  float: right;
+  margin-bottom: 4px;
+}
+
 
 /* Switches */
 input[type="checkbox"] {
