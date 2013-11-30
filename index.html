@@ -57,7 +57,7 @@
         <div class="title2">How I achieved the effect</div>
         <p>This is something I was really confused about for a little bit, until it found clever solution. I am calling <code>.header</code> which has a higher z-index then <code>.header-blur</code>. Header-blur is placed directly under the header with the CSS filters that blur the contents when scrolling. This is kind of neat because it can provides some context to the navbar having content above it. It's subtle, but it's a great touch.</p>
           <code>
-            .header { <br />
+            .nav { <br />
             position: absolute; <br />
             z-index: 3; <br />
             top: 0; <br />
@@ -72,7 +72,7 @@
           }
           <br />
           <br />
-          .header-blur { <br />
+          .nav-blur { <br />
               position: absolute; <br />
               z-index: 2; <br />
               -webkit-filter: blur(3px); <br />
@@ -88,7 +88,7 @@
               padding: 0; <br />
           }
           </code>
-          <p class="excuse">It's a little hacky on the actual webpage as I had to align it to be inside the iPhone, but it works great on actual websites :)</p>
+          <p class="excuse">It's a little hacky on the actual web pages as I had to align it to be inside the iPhone, but it works great on actual websites :)</p>
           <br />
         </div>
       </div>
