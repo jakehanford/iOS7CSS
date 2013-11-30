@@ -8,7 +8,7 @@ html, body {
   vertical-align: baseline;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 300;
-  background-color: #F1F0F5;
+  background-color: #D7D7D7;
 }
 
 *, *:before, *:after {
@@ -58,7 +58,7 @@ li > img {
 }
 
 .titlecolor {
-  color: #A3A1A5;
+  color: #868686;
 }
 
 .title2 {
@@ -67,7 +67,6 @@ li > img {
 }
 
 .btn {
-  border: 1px solid;
   border-radius: 3px;
   display: inline-block;
   padding-top: 10px;
@@ -78,43 +77,27 @@ li > img {
 }
 
 .btn-blue {
-  border-color: rgba(59,89,152,0.8);
-  color: rgba(59,89,152,0.8);
-}
-
-.btn-blue:hover {
   background-color: rgba(59,89,152,0.8);
   color: white;
+  cursor: pointer;
 }
 
 .btn-green {
-  border-color: rgba(148,228,93,0.8);
-  color: rgba(148,228,93,0.8);
-}
-
-.btn-green:hover {
   background-color: rgba(148,228,93,0.8);
-  color: white
+  color: white;
+  cursor: pointer;
 }
 
 .btn-red {
-  border-color: rgba(255,134,143,0.8);
-  color: rgba(255,134,143,0.8);
-}
-
-.btn-red:hover {
   background-color: rgba(255,134,143,0.8);
   color: white;
+  cursor: pointer;
 }
 
 .btn-white {
-  color: #E6E5EB;
-  background-color: white;
-}
-
-.btn-white:hover {
-  border-color: black;
   color: black;
+  background-color: white;
+  cursor: pointer;
 }
 
 .howto {
