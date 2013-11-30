@@ -42,13 +42,17 @@ html, body {
 .button {
   padding-top: 20px;
   padding-bottom: 20px;
-  width: 40%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
 .title {
   font-size: 36pt;
   padding-top: 60px;
+}
+
+.titlecolor {
+  color: #A3A1A5;
 }
 
 .title2 {
@@ -64,6 +68,7 @@ html, body {
   padding-bottom: 10px;
   padding-right: 20px;
   padding-left: 20px;
+  text-align: center;
 }
 
 .btn-blue {
@@ -97,12 +102,12 @@ html, body {
 }
 
 .btn-white {
-  border-color: #E6E5EB;
   color: #E6E5EB;
+  background-color: white;
 }
 
 .btn-white:hover {
-  background-color: white;
+  border-color: black;
   color: black;
 }
 
@@ -118,6 +123,10 @@ footer {
   color: #E6E5EB;
   background: gray;
   height: 20px;
+}
+
+.excuse {
+  text-align: center;
 }
 /*#########################################*/
 /*#########################################*/
@@ -209,6 +218,7 @@ footer {
   padding-top: 10px;
   padding-bottom: 10px;
   list-style: none;
+  margin-right: 5px;
 }
 
 .iphone {
